@@ -1,0 +1,27 @@
+{
+    "name": "aws-iot-rpi-curso",
+    "version": "1.0.0",
+    "description": "NodeJS IoT SDK v2 Pub Sub Sample",
+    "homepage": "https://github.com/ameza/aws-iot-rpi-curso",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ameza/aws-iot-rpi-curso"
+    },
+    "author": "Andres Meza",
+    "license": "Apache-2.0",
+    "main": "./dist/index.js",
+    "scripts": {
+        "start": "tsc && node ./dist/index.js",
+        "tsc": "tsc",
+        "prepare": "npm run tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^10.17.50",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "aws-crt": "^1.12.4",
+        "aws-iot-device-sdk-v2": "^1.8.2",
+        "dotenv": "^16.0.1"
+    }
+}
